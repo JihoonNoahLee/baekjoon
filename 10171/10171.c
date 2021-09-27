@@ -6,14 +6,14 @@
 /*   By: jihoolee <jihoolee@student.42SEOUL.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 14:43:15 by jihoolee          #+#    #+#             */
-/*   Updated: 2021/09/27 14:43:18 by jihoolee         ###   ########.fr       */
+/*   Updated: 2021/09/27 15:05:13 by jihoolee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int    main(void)
+int	main(void)
 {
-    write(1, "\\    /\\\n )  ( ')\n(  /  )\n \\(__)|", 32);
-    return (0);
+	write(1, "\\    /\\\n )  ( ')\n(  /  )\n \\(__)|", 32);
+	return (0);
 }

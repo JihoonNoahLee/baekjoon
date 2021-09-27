@@ -6,15 +6,15 @@
 /*   By: jihoolee <jihoolee@student.42SEOUL.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 14:43:32 by jihoolee          #+#    #+#             */
-/*   Updated: 2021/09/27 14:43:33 by jihoolee         ###   ########.fr       */
+/*   Updated: 2021/09/27 15:05:40 by jihoolee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 using namespace std;
 
-int main(void)
+int	main(void)
 {
-  cout << "\\    /\\\n )  ( ')\n(  /  )\n \\(__)|";
-  return (0);
+	cout << "\\    /\\\n )  ( ')\n(  /  )\n \\(__)|";
+	return (0);
 }
