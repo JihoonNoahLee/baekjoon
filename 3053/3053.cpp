@@ -1,47 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   4946.cpp                                           :+:      :+:    :+:   */
+/*   3053.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jihoolee <jihoolee@student.42SEOUL.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/01 18:39:51 by jihoolee          #+#    #+#             */
-/*   Updated: 2021/10/01 22:47:25 by jihoolee         ###   ########.fr       */
+/*   Created: 2021/10/05 15:59:08 by jihoolee          #+#    #+#             */
+/*   Updated: 2021/10/05 16:08:05 by jihoolee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <cmath>
+
+#define PI	3.14159265358979323846
 
 using namespace std;
 
-bool	is_prime(int num)
-{
-	int	check_max = sqrt(num);
-
-	if (num == 1)
-		return (false);
-	for (int i = 2; i <= check_max; i++)
-		if (num % i == 0)
-			return (false);
-	return (true);
-}
-
 int	main(void)
 {
-	int	n;
-	int	prime_cnt;
+	int		r;
+	double	euclid_area, taxi_area;
 
-	while (true)
-	{
-		cin >> n;
-		if (n == 0)
-			break ;
-		prime_cnt = 0;
-		for (int i = n + 1; i < 2 * n + 1; i++)
-			if (is_prime(i))
-				prime_cnt++;
-		cout << prime_cnt;
-	}
+	cin >> r;
+	euclid_area = double(r * r) * PI;
+	taxi_area = double(r * r) * 2;
+	cout << fixed;
+	cout.precision(6);
+	cout << euclid_area << endl << taxi_area << endl;
 	return (0);
 }
