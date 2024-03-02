@@ -6,7 +6,7 @@
 #    By: jihoolee <jihoolee@student.42SEOUL.kr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/25 19:11:42 by jihoolee          #+#    #+#              #
-#    Updated: 2024/02/25 19:13:20 by jihoolee         ###   ########.fr        #
+#    Updated: 2024/03/02 15:46:41 by jihoolee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ def main() -> None:
     s: Stack = Stack()
 
     for _ in range(int(input())):
-        cmd: list[int] = list(sys.stdin.readline().strip().split())
+        cmd: list[str] = list(sys.stdin.readline().strip().split())
 
         if cmd[0] == 'push':
             s.push(int(cmd[1]))
